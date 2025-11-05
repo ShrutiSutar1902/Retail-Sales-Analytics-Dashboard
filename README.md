@@ -1,48 +1,97 @@
 # Retail Sales Data Engineering Pipeline
 
-This project demonstrates a complete Data Engineering workflow to process retail sales data and generate analytical insights using Power BI.
+This project demonstrates an end-to-end Data Engineering workflow where sales data is cleaned, processed, stored, and visualized to generate business insights.
 
-## 🎯 Objective
-To extract raw sales data from a CSV file, transform it into meaningful metrics, store it in a relational database, and visualize business KPIs.
+---
 
-## 🛠️ Tech Stack
-| Layer | Tools Used |
-|------|------------|
-| Programming | Python (Pandas) |
-| Database | MySQL |
-| ETL Pipeline | Python Script |
-| Visualization | Power BI |
-| Data Source | CSV File |
+## ✅ What You Need Before Starting
 
-## 🔄 Workflow (ETL Pipeline)
+### 1) Software Installations
+| Tool | Purpose | Download Link |
+|-----|---------|---------------|
+| **Python** | Data cleaning & transformation | https://www.python.org/downloads/ |
+| **MySQL Server + MySQL Workbench** | Database storage & SQL queries | https://dev.mysql.com/downloads/installer/ |
+| **Power BI Desktop** | Dashboard & visualization | https://powerbi.microsoft.com/desktop/ |
+
+### 2) Python Libraries to Install
+Open Command Prompt and install:
+  1.  pip install pandas
+  2.  pip install mysql-connector-python
 
 
-## 📊 Dashboard Insights
-- **Total Revenue Generated**
-- **Top Selling Products**
-- **Daily Sales Trend Visualization**
+---
 
-## 📂 Project Structure
-retail-sales-pipeline/
-│── data/
-│ └── sales.csv
-│── scripts/
-│ └── etl_pipeline.py
-│── dashboard/
-│ └── sales_dashboard.pbix
-│── README.md
+## 🧱 Project Steps (High-Level Workflow)
 
-## 🧠 Key Features
-- Built a Python-based ETL process to compute revenue (total_amount = quantity * price).
-- Loaded clean data into a MySQL relational database.
-- Designed an interactive Power BI dashboard for business insights.
-- Demonstrates industry-style workflow for Data Engineer roles.
+### **Step 1: Prepare Your Dataset**
+Use any **retail or sales dataset** in CSV format (columns like date, product, quantity, and price).  
+Save the file to your system for use in the pipeline.
 
-## 📸 Dashboard Screenshot
-(Add screenshot here once dashboard is complete)
+---
+
+### **Step 2: Create MySQL Database and Table**
+Open **MySQL Workbench**:
+1. Create a new database (e.g., `retail_sales`)
+2. Create a table for storing sales data (columns matching your CSV)
+
+---
+
+### **Step 3: Load and Clean Data Using Python**
+- Read the CSV file into Python
+- Clean or adjust data (e.g., remove nulls, calculate totals)
+- Connect to MySQL and insert the cleaned records
+
+*(Code not included here — you will write based on your logic.)*
+
+---
+
+### **Step 4: Verify Data in MySQL**
+Run SQL queries in Workbench to:
+- Check total records
+- Validate calculations
+- Analyze product or date-wise metrics
+
+---
+
+### **Step 5: Create Dashboard in Power BI**
+
+1. Open **Power BI Desktop**
+2. Click **Get Data**
+3. Choose:
+   - **MySQL Database** (recommended), or
+   - **Import CSV Directly** for quicker setup
+4. Load your sales data
+
+#### Create These Visuals:
+| Visual | Purpose |
+|-------|---------|
+| **Card** | Display Total Revenue |
+| **Bar Chart** | Show Top Selling Products |
+| **Line Chart** | Display Daily/Monthly Sales Trend |
+
+Arrange and format dashboard neatly.
+
+---
+
+## 🎯 Output / Final Result
+You will have:
+- A cleaned & structured sales dataset stored in MySQL
+- A Power BI dashboard showing key business metrics:
+  - Total revenue
+  - Best-selling products
+  - Sales trends over time
+
+---
+
+## 🧠 Skills Demonstrated
+- Data Cleaning & Transformation
+- SQL Database Design and Querying
+- ETL Pipeline Understanding
+- KPI Dashboard Creation in Power BI
+
+---
 
 ## 🤝 Contributions
-Feel free to fork, improve, or suggest enhancements.
+Contributions and suggestions are welcome.
 
-## 📜 License
-This project is open-source and available under the MIT License.
+
