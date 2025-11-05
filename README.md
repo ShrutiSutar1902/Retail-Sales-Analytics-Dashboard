@@ -43,6 +43,34 @@ Open **MySQL Workbench**:
 
 *(Code not included here — you will write based on your logic.)*
 
+Sure ✅ Here is the **GitHub-ready section** you can paste directly into your README:
+
+---
+
+### **▶️ How to Run the ETL Script**
+
+1. Open **Command Prompt / Terminal**
+2. Navigate to the folder where `etl_pipeline.py` is located:
+
+   ```
+   cd scripts
+   ```
+3. Run the script:
+
+   ```
+   python etl_pipeline.py
+   ```
+
+#### **Expected Output**
+
+If everything is set up correctly, you will see:
+
+```
+✅ Data loaded successfully into MySQL!
+```
+
+
+
 ---
 
 ### **Step 4: Verify Data in MySQL**
