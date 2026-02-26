@@ -1,4 +1,4 @@
-# Retail Sales Data Engineering Pipeline
+# Retail Sales Analytics Dashboard
 
 This project demonstrates an end-to-end Data Engineering workflow where sales data is cleaned, processed, stored, and visualized to generate business insights.
 
